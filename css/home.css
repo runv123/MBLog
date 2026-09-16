@@ -1,0 +1,252 @@
+/* 首页特定样式 */
+
+/* 英雄区域 */
+.hero {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+.hero-content {
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: var(--light-text);
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: var(--light-text);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 最新博客区域 */
+.latest-blog {
+    margin-bottom: 80px;
+}
+
+.latest-blog h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.blog-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.blog-date {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.blog-card p {
+    color: var(--light-text);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    color: var(--secondary-color);
+}
+
+.view-all {
+    text-align: center;
+}
+
+.view-all a {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.view-all a:hover {
+    color: var(--secondary-color);
+}
+
+/* 特色作品区域 */
+.featured-works {
+    margin-bottom: 80px;
+}
+
+.featured-works h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.work-item {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.work-image {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.work-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.work-item p {
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(102, 126, 234, 0.1);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* 团队信息区域 */
+.team-info {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    padding: 60px 0;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+.team-info h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.team-content {
+    max-width: 800px;
+}
+
+.team-content p {
+    font-size: 16px;
+    color: var(--light-text);
+    line-height: 1.8;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .latest-blog h2,
+    .featured-works h2,
+    .team-info h2 {
+        font-size: 28px;
+    }
+}
