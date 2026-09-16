@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>关于 - MBLog</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <style>
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 2fr;
+
+            gap: 30px;
+
+            margin-bottom: 40px;
+        }
+
+
+        .about-card {
+
+            background: var(--card-bg);
+
+            border-radius: 14px;
+
+            padding: 30px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .profile {
+
+            text-align: center;
+        }
+
+
+        .profile-icon {
+
+            width: 110px;
+
+            height: 110px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 55px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary-color),
+                    var(--secondary-color)
+                );
+
+            color: white;
+        }
+
+
+        .profile h2 {
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .profile p {
+
+            color: var(--light-text);
+
+        }
+
+
+        .about-card h2 {
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .about-card p {
+
+            color: var(--light-text);
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .skill-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 20px;
+
+        }
+
+
+        .skill {
+
+            padding: 7px 14px;
+
+            border-radius: 20px;
+
+            background:
+                rgba(102, 126, 234, 0.1);
+
+            color: var(--primary-color);
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+        }
+
+
+        .about-message {
+
+            text-align: center;
+
+            background: white;
+
+            border-radius: 14px;
+
+            padding: 40px;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .about-message p {
+
+            max-width: 700px;
+
+            margin: 15px auto 0;
+
+            color: var(--light-text);
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .about-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <div class="logo">
+
+            <h1>🌙 MBLog</h1>
+
+            <p class="subtitle">
+                夜影行者的个人空间
+            </p>
+
+        </div>
+
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="index.html">
+                    首页
+                </a>
+            </li>
+
+            <li>
+                <a href="blog.html">
+                    博客
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    作品
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html"
+                   class="active">
+                    关于
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<main class="main-content">
+
+    <div class="container">
+
+
+        <header class="page-header">
+
+            <h1>关于我</h1>
+
+            <p>
+                认识一下 MBLog 和它背后的人
+            </p>
+
+        </header>
+
+
+        <div class="about-grid">
+
+
+            <!-- 个人信息 -->
+
+            <section class="about-card profile">
+
+                <div class="profile-icon">
+                    🌙
+                </div>
+
+
+                <h2>
+                    夜影行者
+                </h2>
+
+
+                <p>
+                    Developer · Creator
+                </p>
+
+
+            </section>
+
+
+            <!-- 关于 -->
+
+            <section class="about-card">
+
+                <h2>
+                    关于 MBLog
+                </h2>
+
+
+                <p>
+
+                    MBLog 是一个属于我的个人空间。
+
+                    它不仅仅是一个博客，
+                    也是一个记录项目、作品和成长过程的地方。
+
+                </p>
+
+
+                <p>
+
+                    我希望把一些正在思考、
+                    正在开发以及已经完成的东西记录下来。
+
+                    哪怕只是一个很小的想法，
+                    也值得留下痕迹。
+
+                </p>
+
+
+                <h2>
+                    我在做什么
+                </h2>
+
+
+                <p>
+
+                    目前主要关注 Web 开发、
+                    工具开发以及一些自己感兴趣的项目。
+
+                    比起追求复杂的技术，
+                    我更希望把真正有用的东西做出来。
+
+                </p>
+
+            </section>
+
+
+        </div>
+
+
+        <!-- 技术方向 -->
+
+        <section class="about-card">
+
+            <h2>
+                技术方向
+            </h2>
+
+
+            <p>
+                目前主要接触和学习这些方向：
+            </p>
+
+
+            <div class="skill-list">
+
+                <span class="skill">
+                    HTML
+                </span>
+
+                <span class="skill">
+                    CSS
+                </span>
+
+                <span class="skill">
+                    JavaScript
+                </span>
+
+                <span class="skill">
+                    Web Development
+                </span>
+
+                <span class="skill">
+                    UI Design
+                </span>
+
+                <span class="skill">
+                    Cloudflare
+                </span>
+
+                <span class="skill">
+                    GitHub
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <br><br>
+
+
+        <!-- 最后一句话 -->
+
+        <section class="about-message">
+
+            <h2>
+                做一点有意思的东西
+            </h2>
+
+
+            <p>
+
+                代码只是工具。
+
+                真正重要的是，
+                我们用它创造了什么。
+
+                欢迎来到 MBLog。
+
+            </p>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            &copy; 2026 MBLog - 夜影行者
+        </p>
+
+        <p>
+            与梦同行，追逐光芒
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
