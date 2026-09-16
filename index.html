@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MBLog - 夜影行者的个人空间</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* 首页 */
+
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background:
+                radial-gradient(circle at top right,
+                    rgba(102, 126, 234, 0.15),
+                    transparent 40%),
+                radial-gradient(circle at bottom left,
+                    rgba(118, 75, 162, 0.12),
+                    transparent 40%);
+            border-radius: 20px;
+            margin-bottom: 60px;
+        }
+
+        .hero-icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+            background: linear-gradient(
+                135deg,
+                var(--primary-color),
+                var(--secondary-color)
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: var(--light-text);
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: var(--light-text);
+        }
+
+        .home-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 70px;
+        }
+
+        .home-card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .home-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .home-card-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .home-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .home-card p {
+            color: var(--light-text);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .home-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .welcome {
+            text-align: center;
+            background: white;
+            border-radius: 14px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        .welcome p {
+            color: var(--light-text);
+            max-width: 700px;
+            margin: 15px auto 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="container">
+
+        <div class="logo">
+            <h1>🌙 MBLog</h1>
+            <p class="subtitle">夜影行者的个人空间</p>
+        </div>
+
+        <ul class="nav-menu">
+            <li>
+                <a href="index.html" class="active">首页</a>
+            </li>
+
+            <li>
+                <a href="blog.html">博客</a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">作品</a>
+            </li>
+
+            <li>
+                <a href="about.html">关于</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<main class="main-content">
+
+    <div class="container">
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <div class="hero-icon">🌙</div>
+
+            <h1>你好，我是夜影行者</h1>
+
+            <p>
+                欢迎来到 MBLog。
+                这里记录我的开发过程、想法、作品，
+                以及那些正在慢慢实现的想法。
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="blog.html"
+                   class="btn btn-primary">
+                    阅读博客
+                </a>
+
+                <a href="portfolio.html"
+                   class="btn btn-secondary">
+                    查看作品
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- 内容入口 -->
+
+        <div class="section-title">
+
+            <h2>探索 MBLog</h2>
+
+            <p>
+                这里记录正在发生的事情
+            </p>
+
+        </div>
+
+
+        <div class="home-grid">
+
+            <div class="home-card">
+
+                <div class="home-card-icon">
+                    📝
+                </div>
+
+                <h3>博客</h3>
+
+                <p>
+                    记录开发过程、技术学习、
+                    项目思考以及一些日常想法。
+                </p>
+
+                <a href="blog.html">
+                    查看博客 →
+                </a>
+
+            </div>
+
+
+            <div class="home-card">
+
+                <div class="home-card-icon">
+                    💻
+                </div>
+
+                <h3>作品</h3>
+
+                <p>
+                    展示正在开发或者已经完成的
+                    网站、工具和其他项目。
+                </p>
+
+                <a href="portfolio.html">
+                    查看作品 →
+                </a>
+
+            </div>
+
+
+            <div class="home-card">
+
+                <div class="home-card-icon">
+                    👤
+                </div>
+
+                <h3>关于</h3>
+
+                <p>
+                    了解 MBLog、了解我的开发方向，
+                    以及这个网站为什么存在。
+                </p>
+
+                <a href="about.html">
+                    了解更多 →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 欢迎区域 -->
+
+        <section class="welcome">
+
+            <h2>让想法慢慢变成现实</h2>
+
+            <p>
+                不需要一开始就做到完美。
+                一个想法、一个页面、一段代码，
+                都可以成为下一个项目的开始。
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            &copy; 2026 MBLog - 夜影行者
+        </p>
+
+        <p>
+            与梦同行，追逐光芒
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
