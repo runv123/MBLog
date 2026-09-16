@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品 - MBLog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🌙 MBLog</h1>
+                <p class="subtitle">夜影行者的个人空间</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="portfolio.html" class="active">作品</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>我的作品</h1>
+                <p>展示我在追梦中的创意和技术成果</p>
+            </div>
+
+            <!-- 分类过滤 -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">Web 应用</button>
+                <button class="filter-btn" data-filter="design">设计</button>
+                <button class="filter-btn" data-filter="tool">工具</button>
+            </div>
+
+            <!-- 作品网格 -->
+            <div class="portfolio-grid">
+                <!-- 作品1: MBLog -->
+                <div class="portfolio-item" data-filter="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">🌙</div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>MBLog 个人网站</h3>
+                        <p class="description">
+                            一个现代化的个人网站，集博客、作品展示和个人信息于一体。
+                            使用纯前端技术实现，具有响应式设计和流畅的用户体验。
+                        </p>
+                        <div class="technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="portfolio-meta">
+                            <span class="date">2024年9月</span>
+                            <span class="status">进行中</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品2: 示例项目 -->
+                <div class="portfolio-item" data-filter="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">💻</div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>待分享的项目</h3>
+                        <p class="description">
+                            这里会展示您的其他项目。您可以添加您完成的各类项目，
+                            从 Web 应用到移动应用，从工具到设计作品。
+                        </p>
+                        <div class="technologies">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="portfolio-meta">
+                            <span class="date">待更新</span>
+                            <span class="status">未开始</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品3: 示例设计 -->
+                <div class="portfolio-item" data-filter="design">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">🎨</div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>设计作品</h3>
+                        <p class="description">
+                            展示您的设计作品、UI/UX 设计或其他创意项目。
+                            可以包括网页设计、应用界面、品牌设计等。
+                        </p>
+                        <div class="technologies">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <div class="portfolio-meta">
+                            <span class="date">待更新</span>
+                            <span class="status">未开始</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品4: 示例工具 -->
+                <div class="portfolio-item" data-filter="tool">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">🔧</div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>开发工具</h3>
+                        <p class="description">
+                            展示您开发的各类工具、插件或命令行应用。
+                            这些工具可以帮助开发者提高生产效率。
+                        </p>
+                        <div class="technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CLI</span>
+                        </div>
+                        <div class="portfolio-meta">
+                            <span class="date">待更新</span>
+                            <span class="status">未开始</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MBLog - 夜影行者 | 追梦团队</p>
+            <p>与梦同行，追逐光芒</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
