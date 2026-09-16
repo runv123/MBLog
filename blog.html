@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>博客 - MBLog</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <style>
+
+        .blog-list {
+            display: grid;
+            gap: 25px;
+        }
+
+        .blog-card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: var(--light-text);
+        }
+
+        .blog-tag {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .blog-card h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .blog-card h2 a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .blog-card h2 a:hover {
+            color: var(--primary-color);
+        }
+
+        .blog-excerpt {
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .empty-blog {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+        }
+
+        .empty-blog-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .empty-blog p {
+            color: var(--light-text);
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <div class="logo">
+
+            <h1>🌙 MBLog</h1>
+
+            <p class="subtitle">
+                夜影行者的个人空间
+            </p>
+
+        </div>
+
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="index.html">
+                    首页
+                </a>
+            </li>
+
+            <li>
+                <a href="blog.html"
+                   class="active">
+                    博客
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    作品
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    关于
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<main class="main-content">
+
+    <div class="container">
+
+
+        <header class="page-header">
+
+            <h1>我的博客</h1>
+
+            <p>
+                记录代码、项目与一路上的想法
+            </p>
+
+        </header>
+
+
+        <div class="blog-list">
+
+
+            <!-- 博客 1 -->
+
+            <article class="blog-card">
+
+                <div class="blog-meta">
+
+                    <span>
+                        📅 2026年
+                    </span>
+
+                    <span class="blog-tag">
+                        开发
+                    </span>
+
+                </div>
+
+
+                <h2>
+
+                    <a href="#">
+                        MBLog 的开始
+                    </a>
+
+                </h2>
+
+
+                <p class="blog-excerpt">
+
+                    这是 MBLog 的第一篇文章。
+                    一个个人网站从一个简单的想法开始，
+                    慢慢加入博客、作品和个人介绍。
+
+                </p>
+
+
+                <a href="#"
+                   class="read-more">
+
+                    阅读全文 →
+
+                </a>
+
+            </article>
+
+
+            <!-- 博客 2 -->
+
+            <article class="blog-card">
+
+                <div class="blog-meta">
+
+                    <span>
+                        📅 2026年
+                    </span>
+
+                    <span class="blog-tag">
+                        项目
+                    </span>
+
+                </div>
+
+
+                <h2>
+
+                    <a href="#">
+                        我的项目记录
+                    </a>
+
+                </h2>
+
+
+                <p class="blog-excerpt">
+
+                    这里可以记录正在开发的项目，
+                    包括设计思路、开发过程、
+                    遇到的问题以及最终结果。
+
+                </p>
+
+
+                <a href="#"
+                   class="read-more">
+
+                    阅读全文 →
+
+                </a>
+
+            </article>
+
+
+            <!-- 博客 3 -->
+
+            <article class="blog-card">
+
+                <div class="blog-meta">
+
+                    <span>
+                        📅 2026年
+                    </span>
+
+                    <span class="blog-tag">
+                        随笔
+                    </span>
+
+                </div>
+
+
+                <h2>
+
+                    <a href="#">
+                        写给未来的自己
+                    </a>
+
+                </h2>
+
+
+                <p class="blog-excerpt">
+
+                    有些东西不一定需要马上完成。
+                    记录下来，等以后回头看的时候，
+                    也许会发现自己已经走了很远。
+
+                </p>
+
+
+                <a href="#"
+                   class="read-more">
+
+                    阅读全文 →
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            &copy; 2026 MBLog - 夜影行者
+        </p>
+
+        <p>
+            与梦同行，追逐光芒
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
