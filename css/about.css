@@ -1,0 +1,219 @@
+/* 关于页面样式 */
+
+/* 关于页面部分 */
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+/* 个人介绍内容 */
+.about-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.about-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-placeholder {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    box-shadow: var(--shadow-lg);
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-text .role {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-text .bio {
+    color: var(--light-text);
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* 技能网格 */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: rgba(102, 126, 234, 0.1);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.skill:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 团队介绍 */
+.team-introduction {
+    max-width: 900px;
+}
+
+.team-introduction p {
+    font-size: 15px;
+    color: var(--light-text);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.team-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.value {
+    background: rgba(102, 126, 234, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.value:hover {
+    background: rgba(102, 126, 234, 0.1);
+    transform: translateY(-3px);
+}
+
+.value h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.value p {
+    font-size: 13px;
+    color: var(--light-text);
+    margin-bottom: 0;
+}
+
+/* 联系信息 */
+.contact-info {
+    max-width: 800px;
+}
+
+.contact-info > p {
+    font-size: 15px;
+    color: var(--light-text);
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.contact-link {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-link:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+}
+
+.contact-link .icon {
+    font-size: 40px;
+}
+
+.contact-link .text {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avatar-placeholder {
+        width: 120px;
+        height: 120px;
+        font-size: 60px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .skills-grid,
+    .team-values,
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
+}
